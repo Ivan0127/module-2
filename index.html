@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="math"></p>
+
+<p id="string"></p>
+<p id="const man"></p>
+<script>
+
+{
+
+let x = 50 ;
+let y= 45 ;
+let z = x - y;
+document.getElementById("math").innerHTML = "<h4> X + Y =</h4>" + z;
+console.log(x * y )
+}
+//the one above is local variables inside of a code block
+
+
+//these two below are global because they're outside of the code block
+</script>
+<script>
+    let b = "These ";
+    let c= "are ";
+let d="string variables.";
+    let f = b + c + d;
+    document.getElementById("string").innerHTML = "<h4>What are these?: </h4>" + f;
+    console.log("string variables")
+//these are string variables
+</script>
+
+<script>
+
+    const man = {weight:"160 pounds, ", height:"5 foot 10 inches, ", eyes:"blue eyes, ",hair:"bald, "};
+    
+    
+    
+    document.getElementById("const man").innerHTML ="<h4>Describe Const Man: </h4>" + man.weight+ man.eyes;
+    </script>
+    
+</body>
+</html>
